@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pac1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amble Bold"
+        android:textSize="28sp"
+        android:id="@+id/ambleBold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amble Light"
+        android:textSize="28sp"
+        android:id="@+id/ambleLight"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amble Regular"
+        android:textSize="28sp"
+        android:id="@+id/ambleRegular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenSans Regular"
+        android:textSize="28sp"
+        android:id="@+id/opRegular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenSans-Italic"
+        android:id="@+id/opItalic"
+        android:textSize="28sp"
+        />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Pacifico"
+        android:id="@+id/pacifico"/>
+
+</LinearLayout>

@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">pac1</string>
+    <string name="app_name">Práctica 1</string>
+    <string name="Pacifico">Pacifico</string>
+    <string name="ambleBold">Amble Bold</string>
+    <string name="ambleLight">Amble Light</string>
+    <string name="ambleRegular">Amble Regular</string>
+    <string name="opRegular">OpenSans Regular</string>
+    <string name="opItalic">OpenSans-Italic</string>
 </resources>

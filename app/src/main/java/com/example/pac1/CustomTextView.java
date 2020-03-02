@@ -1,4 +1,3 @@
-/*
 package com.example.pac1;
 
 import android.content.Context;
@@ -12,23 +11,39 @@ public class CustomTextView extends AppCompatTextView {
     private int typefaceType;
     private TypeFactory mFontFactory;
 
+    /**
+     * Constructor
+     * @param context Contenido
+     * @param attrs Atributos
+     */
     public CustomTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        applyCustomFont(context, attrs);
+        InitControles(context, attrs);
     }
 
+    /**
+     * Constructor
+     * @param context Contenido
+     * @param attrs Atributos
+     * @param defStyle Estilo
+     */
     public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
-        applyCustomFont(context, attrs);
+        InitControles(context, attrs);
     }
 
+    /**
+     * Constructor
+     * @param context Contenido
+     */
     public CustomTextView(Context context) {
         super(context);
     }
 
-    private void applyCustomFont(Context context, AttributeSet attrs) {
+    // Inicializa el control
+    private void InitControles(Context context, AttributeSet attrs) {
 
         TypedArray array = context.getTheme().obtainStyledAttributes(
                 attrs,
@@ -42,9 +57,13 @@ public class CustomTextView extends AppCompatTextView {
         if (!isInEditMode()) {
             setTypeface(getTypeFace(typefaceType));
         }
-
     }
 
+    /**
+     * Método que nos permite obtener un estilo de fuente
+     * @param type Tipo de fuente
+     * @return Devuelve estilo fontFactory
+     */
     public Typeface getTypeFace(int type) {
         if (mFontFactory == null)
             mFontFactory = new TypeFactory(getContext());
@@ -70,11 +89,14 @@ public class CustomTextView extends AppCompatTextView {
         }
     }
 
+    /**
+     * Constantes para los tipos de fuente
+     */
     public interface Constants {
         int A_BOLD = 1,
-                A_LIGHT = 2,
-                A_REGULAR = 3,
-                O_LIGHT = 4,
-                O_REGULAR=5;
+            A_LIGHT = 2,
+            A_REGULAR = 3,
+            O_LIGHT = 4,
+            O_REGULAR=5;
     }
-}*/
+}

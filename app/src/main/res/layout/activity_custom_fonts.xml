@@ -8,7 +8,8 @@
     android:orientation="vertical"
     tools:context="com.example.pac1.MainActivity">
 
-    <TextView
+    <com.example.pac1.CustomTextView
+        app:font_name="ambleBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ambleBold"
@@ -16,7 +17,8 @@
         android:id="@+id/ambleBold"
         />
 
-    <TextView
+    <com.example.pac1.CustomTextView
+        app:font_name="ambleLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ambleLight"
@@ -24,21 +26,24 @@
         android:id="@+id/ambleLight"
         />
 
-    <TextView
+    <com.example.pac1.CustomTextView
+        app:font_name="ambleRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ambleRegular"
         android:textSize="28sp"
         android:id="@+id/ambleRegular" />
 
-    <TextView
+    <com.example.pac1.CustomTextView
+        app:font_name="openSansRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/opRegular"
         android:textSize="28sp"
         android:id="@+id/opRegular" />
 
-    <TextView
+    <com.example.pac1.CustomTextView
+        app:font_name="openSansItalic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/opItalic"

@@ -11,12 +11,13 @@ public class TypeFactory {
     private String O_ITALIC= "OpenSans-Italic.ttf";
     private String O_REGULAR="OpenSans-Regular.ttf";
 
-    Typeface ambleBold;
-    Typeface ambleLight;
-    Typeface ambleRegular;
-    Typeface openSansItalic;
-    Typeface openSansRegular;
+    public Typeface ambleBold;
+    public Typeface ambleLight;
+    public Typeface ambleRegular;
+    public Typeface openSansItalic;
+    public Typeface openSansRegular;
 
+    // Método crear fuentes
     public TypeFactory(Context context){
         ambleBold = Typeface.createFromAsset(context.getAssets(),A_BOLD);
         ambleLight = Typeface.createFromAsset(context.getAssets(),A_LIGHT);
